@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Heart Disease Predictor</title>
+		<head>
+        <meta charset="utf-8">
+        <title>Heart Disease Predictor</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+      <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+
+    </head>
+ <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font" style="color:red; font-family: 'Dancing Script'; ">Heart Disease Predictor</span></h2>
+      <div class='description'> <br></br>
+    			<p style="color:violet">A Deep Learning Web App, Built with Ann and Flask.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction > 0.45 %}
+				<h1><span class='danger'>Oops! Your have Heart condition is SEVERE.</span></h1><h3><span class='sad'>Please consult Doctor.Stay Healthy Mate!</h3>
+<img src="https://media.tenor.com/images/ad7e357ab210062fca586cf3bdce64ea/tenor.gif" alt="Danger" width="300" height="373" ">
+      {% else %}
+      <h1> <span class='safe'>Wooh! Your Heart looks NORMAL.</span></h1><h2 > <span class='happy'> Long Live!</h2><br>
+<img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/happy-heart_zkOwblyK_thumb.jpg" alt="you dont have diabetes" width="420"
+         height="403" ;
+
+>
+			{% endif %}
+<br></br>
+		</div>
+
+		<!-- Footer -->
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+
+               <a target="_blank" href="https://www.linkedin.com/in/suhas-sasetty/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Suhas Sasetty<br>Mail : suhas.sasetty@gmail.com</p>
+       </div>
+
+    </body>
+</html>
+<style>
+
+    <style>
+    html{
+	height: 100%;
+	margin: 0;
+
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+  background-image: url('https://www.wunc.org/sites/wunc/files/styles/medium/public/201909/doctor-physician-white-coat-uniform-medical-assistant-stethoscope-1571983-pxhere.com_.jpg');
+  background-repeat: no-repeat;
+   background-size: cover;
+flex-direction: column;
+    background-attachment: fixed;
+
+}
+
+/* Website Title */
+.container{
+    padding: 25px;
+	position: relative;
+}
+.container-heading{
+    margin: 0;
+}
+
+
+
+.description p{
+	color: #ffffff;
+    font-style: italic;
+    font-size: 14px;
+    margin: -5px 0 0;
+}
+
+
+
+
+.website{
+  float:left
+}
+
+/* Contact */
+.contact-icon{
+	color: #3385ff;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: blue;
+}
+
+/* Footer */
+.footer{
+	flex-shrink: 0;
+	position: relative;
+	padding: 21px;
+
+}
+
+.footer-description{
+	color: #3385ff;
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    padding: 25px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: #ff0000;
+}
+
+.safe{
+    color: green;
+}
+.happy{
+  color:#6600cc
+}
+.sad{
+  color:#669900
+
+}
+
+.heading_font {
+      font-family: 'Dancing Script';font-size: 500px;
+      color:#313131;
+      font-size:80px;
+      font-weight: bold;
+
+      -webkit-animation:colorchange 20s infinite alternate;
+
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+
+        color: blue;
+      }
+
+      10% {
+
+        color: #8e44ad;
+      }
+
+      20% {
+
+        color: #1abc9c;
+      }
+
+      30% {
+
+        color: #d35400;
+      }
+
+      40% {
+
+        color: yellow;
+      }
+
+      50% {
+
+        color: #34495e;
+      }
+
+      60% {
+
+        color: orange;
+      }
+
+      70% {
+
+        color: #2980b9;
+      }
+      80% {
+
+        color: #f1c40f;
+      }
+
+      90% {
+
+        color: #2980b9;
+      }
+
+      100% {
+
+        color: pink;
+      }
+    }
+
+
+
+}
+
+</style>
